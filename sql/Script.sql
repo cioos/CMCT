@@ -1,6 +1,7 @@
 --<ScriptOptions statementTerminator=";"/>
 --1234512123
 ---2345
+---2345
 
 ALTER TABLE `cioos`.`tbl_order` DROP PRIMARY KEY;
 
