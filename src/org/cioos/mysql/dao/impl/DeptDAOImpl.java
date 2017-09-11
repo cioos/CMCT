@@ -36,7 +36,7 @@ public class DeptDAOImpl implements IDeptDAO {
 	public boolean doUpdate(Dept vo) throws Exception {
 		String sql = "UPDATE dept SET dname=?,loc=? WHERE deptno=?" ;
 		this.pstmt = this.conn.prepareStatement(sql) ;
-		this.pstmt.setString(1, vo.getDname());
+		this.pstmt.setString(1, vo.getName());
 		this.pstmt.setString(2, vo.getLoc());
 		this.pstmt.setInt(3, vo.getDeptno());
 		if (this.pstmt.executeUpdate() > 0) {
